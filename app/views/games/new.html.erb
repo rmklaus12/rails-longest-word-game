@@ -1,0 +1,8 @@
+<h1>New Game</h1>
+<ul class="grid">
+  <li><%= @letters.join(' ') %></li>
+</ul>
+<form action="/score" method="post">
+  <input type="text" name="user_input">
+  <input type="submit" value="Guess!">
+</form>
